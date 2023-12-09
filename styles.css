@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.card {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    background: url(./images/gtaback.jpeg);
+    background-size: cover;
+}
+
+.card .gtamain {
+    position: absolute;
+    bottom: 0;
+    height: 438px;
+    transition: 0.8s all;
+}
+
+.card:hover .gtamain {
+    bottom: -40%;
+    height: 700px;
+}
+
+.card .logo {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 200px;
+    transition: 0.8s all;
+}
+
+.card:hover .logo {
+    top: -30%;
+    left: -30%;
+    height: 400px;
+}
